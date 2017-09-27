@@ -4,8 +4,6 @@ const extractText = require('extract-text-webpack-plugin');
 
 console.log('NODE_ENV', process.env.NODE_ENV);
 
-// test
-
 const extractSass = new extractText({
     filename: '[name].css',
     disable: process.env.NODE_ENV === 'development'
