@@ -38,12 +38,65 @@ body {
             flex: 1;
         }
         .white-space {
+            position: relative;
             flex: 1;
             background: #fff;
         }
         .black-space {
+            position: relative;
             flex: 1;
-            background: #000;
+            background: #b1b1b1;
+        }
+        .selected-wht {
+            background: #c6eafd;
+        }
+        .selected-blk {
+            background: #78b2d3;
+        }
+        .moves-wht {
+            background: #ceffce;
+        }
+        .moves-blk {
+            background: #92d592;
+        }
+        .attack-wht {
+            background: #facece;
+        }
+        .attack-blk {
+            background: #dd9999;
+        }
+        .chess-piece {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            svg {
+                flex: 1;
+            }
+            
+            .king {
+                height: 75%;
+            }
+            .queen {
+                height: 70%;
+            }
+            .bishop {
+                height: 60%;
+            }
+            .horse {
+                height: 60%;
+            }
+            .rook {
+                height: 60%;
+            }
+            .pawn {
+                height: 55%;
+            }
         }
     }
 }
