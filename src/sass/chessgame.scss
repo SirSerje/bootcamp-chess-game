@@ -11,7 +11,21 @@ body {
 }
 
 .chess-header {
-    border: 1px solid red;
+    display: flex;
+    padding: 10px 0;
+    border: 1px solid black;
+    .title {
+        flex: 1;
+        text-align: center;
+    }
+    .turn {
+        flex: 1;
+        text-align: center;
+    }
+    .time {
+        flex: 1;
+        text-align: center;
+    }
 }
 
 .chess-game {
@@ -97,6 +111,15 @@ body {
             .pawn {
                 height: 55%;
             }
+        }
+    }
+    .confirmation {
+        display: flex;
+        .cancel {
+            flex: 1;
+        }
+        .confirm {
+            flex: 1;
         }
     }
 }
